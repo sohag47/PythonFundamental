@@ -25,4 +25,39 @@ for item in string_array:
 #? Check String
 print("World" in string_array)
 
-#! next https://www.w3schools.com/python/python_strings.asp
+
+text = " Hello, World! "
+
+#! Slicing Strings
+print(text[1:13]) # Hello World
+print(text[8:]) # World
+print(text[:8]) # Hello
+print(text[-7: -1]) # Wor 
+
+#! Modify Strings
+#? upper case, lower case
+print(string_array.upper())
+print(string_array.lower())
+
+#? remove white space
+print(string_array.strip())
+
+#? Replace String
+print(text.replace("World!", "Python"))
+
+#? Split String
+print(text.split(",")) 
+
+#? String Concatenation 
+text2 = "Hello, Python"
+print(text+" "+text2)
+
+#? Format - Strings
+name = "Minhazul Islam Sohag"
+age = 24
+profile = "I am {0}, I'm {1} years old"
+print(profile.format(name, age)) 
+
+#! Escape Characters
+txt = "We are the so-called \"Vikings\" from the north."
+print(txt)

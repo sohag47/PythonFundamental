@@ -7,6 +7,7 @@
 5. set: set, frozenset
 6. boolean : bool
 7. binary: bytes, bytearray, memoryview
+8. empty value: None
 """
 
 #? 1. text type: string
@@ -58,3 +59,5 @@ print(bytearray_type, type(bytearray_type))
 memoryview_type = memoryview(bytes(5)) 
 print(memoryview_type, type(memoryview_type))
 
+empty_value = None
+print(empty_value, type(empty_value))
