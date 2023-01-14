@@ -5,8 +5,8 @@ is called encapsulation. In Python, we denote private
 attributes using underscore as the prefix i.e single _ or 
 double __.
 """
-class Computer:
 
+class Computer:
     def __init__(self):
         self.__maxprice = 900
 
@@ -20,7 +20,7 @@ c = Computer()
 c.sell()
 
 # change the price
-c.__maxprice = 1000 #! it is not working
+c.__maxprice = 800 #! it is not working
 c.sell()
 
 # using setter function
