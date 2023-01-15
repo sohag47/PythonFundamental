@@ -2,6 +2,7 @@ class MyClass:
     def __init__(self, name, age):
         self.name = name
         self.age = age 
+        print("MyClass Init working")
     
     def show(self):
         print("Hello I'm {}, I'm years {} old.".format(self.name, self.age))
@@ -10,6 +11,7 @@ class MyClass:
 class ChildClass(MyClass):
     def __init__(self, name, age):
         MyClass.__init__(self, name, age)
+        print("ChildClass Init working")  
         
     
     def myFunc(self):
@@ -19,18 +21,19 @@ class ChildClass(MyClass):
 #! With super()
 class Child2Class(MyClass):
     def __init__(self, name, age):
-      super().__init__(name, age)  
+        super().__init__(name, age)
+        print("Child2Class Init working")  
 
 
 
 
 
 obj = ChildClass("Sohag", 24)
-obj.myFunc()
-obj.show()
+# obj.myFunc()
+# obj.show()
 
 obj2 = Child2Class("Minhazul", 24)
-obj2.show()
+# obj2.show()
 
 
 #! remove object
