@@ -31,3 +31,6 @@ print(my_tuple)
 (green, *red) = my_tuple
 print(green, red)
 
+(x, y, z) = my_tuple
+print(x, y, z)
+
