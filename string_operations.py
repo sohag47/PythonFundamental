@@ -56,7 +56,15 @@ print(text+" "+text2)
 name = "Minhazul Islam Sohag"
 age = 24
 profile = "I am {0}, I'm {1} years old"
-print(profile.format(name, age)) 
+print(profile.format(name, age))
+
+s3 = "{}-{}".format(name, age)
+print('String Concatenation using format() =', s3)
+
+s3 = "{in1} {in2}".format(in1=name, in2=age)
+print('String Concatenation using format() =', s3)
+
+print(f'My Name is {name}. My age is {age}')
 
 #! Escape Characters
 txt = "We are the so-called \"Vikings\" from the north."
