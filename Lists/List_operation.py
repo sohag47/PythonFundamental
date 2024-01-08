@@ -1,7 +1,7 @@
 my_list = ["apple", "Banana", "Cherry", "Orange", "kiwi", "melon", "mango"]
 
 for item in my_list:
-    print(item, end=" ") 
+    print(item, end=" ")
     
 print('\n')
 for item in range(len(my_list)):
@@ -10,20 +10,19 @@ for item in range(len(my_list)):
 print('\n')
 [print(item, end=" ") for item in my_list]
 
-print('\n')
+
 thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
 
-print('\n')
 thislist.sort()
-print(thislist)
+print("sort:", thislist)
 
-# print('\n')
-# thislist.sort(reverse= True)
-# print(thislist)
+thislist.sort(reverse=True)
+print("reverse sort:", thislist)
 
-print('\n')
 thislist.reverse()
-print(thislist)
+print("reverse sort:", thislist)
 
 new_list = thislist.copy()
-print(new_list)
+print("copy list: ", new_list)
+
+
